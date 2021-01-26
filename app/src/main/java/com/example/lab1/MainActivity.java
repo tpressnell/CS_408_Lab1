@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClickIncrementButton(View V){
         TextView t = (TextView) findViewById(R.id.counterOutput);
         int intCounter = Integer.parseInt(counter);
-        intCounter++;
+        ++intCounter;
         counter = String.valueOf(intCounter);
         t.setText(counter);
     }
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClickDecrementButton(View V){
         TextView t = (TextView) findViewById(R.id.counterOutput);
         int intCounter = Integer.parseInt(counter);
-        intCounter--;
+        --intCounter;
         counter = String.valueOf(intCounter);
         t.setText(counter);
     }
